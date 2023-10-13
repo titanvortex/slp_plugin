@@ -9,13 +9,13 @@
 
 // Google Fonts プリロード
 function speedyload_preload_google_fonts() {
-    echo '<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">';
+    echo '<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel=\'stylesheet\'" defer>';
 }
 add_action('wp_head', 'speedyload_preload_google_fonts');
 
 // YouTube プリロード
 function speedyload_preload_youtube() {
-    echo '<link rel="preload" href="https://www.youtube.com/player_api" as="script">';
+    echo '<link rel="preload" href="https://www.youtube.com/player_api" as="script" defer>';
 }
 add_action('wp_head', 'speedyload_preload_youtube');
 
